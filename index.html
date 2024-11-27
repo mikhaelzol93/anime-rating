@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Anime Rating</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link type="image/x-icon" href="./favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./favicon.ico" rel="icon" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    Hello, World!
+    <main>
+      <form>
+        <label>
+          Глубина
+          <input type="checkbox" name="intensity" id="intensity" />
+        </label>
+
+        <label>
+          Графика
+          <input type="checkbox" name="graphics" id="graphics" />
+        </label>
+
+        <label>
+          Детали
+          <input type="checkbox" name="minutiae" id="minutiae" />
+        </label>
+
+        <label>
+          Музыка
+          <input type="checkbox" name="music" id="music" />
+        </label>
+
+        <label>
+          Персонажи
+          <input type="checkbox" name="characters" id="characters" />
+        </label>
+
+        <label>
+          Связность
+          <input type="checkbox" name="coherence" id="coherence" />
+        </label>
+
+        <label>
+          Сюжет
+          <input type="checkbox" name="plot" id="plot" />
+        </label>
+
+        <label>
+          Увлекательность
+          <input type="checkbox" name="fun" id="fun" />
+        </label>
+
+        <label>
+          Уникальность
+          <input type="checkbox" name="originality" id="originality" />
+        </label>
+
+        <label>
+          Эмоциональность
+          <input type="checkbox" name="emotionality" id="emotionality" />
+        </label>
+
+        <button type="button">Рассчитать</button>
+      </form>
+    </main>
   </body>
 </html>
