@@ -93,3 +93,14 @@
   color: black;
   font-size: 1.5em;
 }
+
+@media (max-width: 1400px) {
+  .checkbox-groups {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .group {
+    width: 50vw;
+  }
+}
