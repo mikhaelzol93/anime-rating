@@ -20,8 +20,9 @@ function handleFormSubmit(event) {
 
   const points = calcPoints(event.target);
 
-  console.dir(data);
+  pointsElement.textContent = `${points}`;
 }
 
 const form = document.getElementById('form');
+const pointsElement = document.getElementById('points');
 form.addEventListener('submit', handleFormSubmit);
