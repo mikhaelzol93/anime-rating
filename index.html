@@ -14,60 +14,68 @@
     <link type="Image/x-icon" href="./favicon.ico" rel="icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <main>
-      <form>
-        <label>
-          Глубина
-          <input type="checkbox" name="intensity" id="intensity" />
-        </label>
+  <body class="body">
+    <main class="main">
+      <form class="form">
+        <div class="checkbox-groups">
+          <div class="group">
+            <label class="label">
+              Глубина
+              <input type="checkbox" name="intensity" id="intensity" />
+            </label>
 
-        <label>
-          Графика
-          <input type="checkbox" name="graphics" id="graphics" />
-        </label>
+            <label class="label">
+              Графика
+              <input type="checkbox" name="graphics" id="graphics" />
+            </label>
 
-        <label>
-          Детали
-          <input type="checkbox" name="minutiae" id="minutiae" />
-        </label>
+            <label class="label">
+              Детали
+              <input type="checkbox" name="minutiae" id="minutiae" />
+            </label>
+          </div>
 
-        <label>
-          Музыка
-          <input type="checkbox" name="music" id="music" />
-        </label>
+          <div class="group">
+            <label class="label">
+              Музыка
+              <input type="checkbox" name="music" id="music" />
+            </label>
 
-        <label>
-          Персонажи
-          <input type="checkbox" name="characters" id="characters" />
-        </label>
+            <label class="label">
+              Персонажи
+              <input type="checkbox" name="characters" id="characters" />
+            </label>
 
-        <label>
-          Связность
-          <input type="checkbox" name="coherence" id="coherence" />
-        </label>
+            <label class="label">
+              Связность
+              <input type="checkbox" name="coherence" id="coherence" />
+            </label>
+          </div>
 
-        <label>
-          Сюжет
-          <input type="checkbox" name="plot" id="plot" />
-        </label>
+          <div class="group">
+            <label class="label">
+              Сюжет
+              <input type="checkbox" name="plot" id="plot" />
+            </label>
 
-        <label>
-          Увлекательность
-          <input type="checkbox" name="fun" id="fun" />
-        </label>
+            <label class="label">
+              Увлекательность
+              <input type="checkbox" name="fun" id="fun" />
+            </label>
 
-        <label>
-          Уникальность
-          <input type="checkbox" name="originality" id="originality" />
-        </label>
+            <label class="label">
+              Уникальность
+              <input type="checkbox" name="originality" id="originality" />
+            </label>
 
-        <label>
-          Эмоциональность
-          <input type="checkbox" name="emotionality" id="emotionality" />
-        </label>
+            <label class="label">
+              Эмоциональность
+              <input type="checkbox" name="emotionality" id="emotionality" />
+            </label>
+          </div>
+        </div>
 
-        <button type="button">Рассчитать</button>
+        <button type="button" class="button">Рассчитать</button>
       </form>
     </main>
   </body>
