@@ -16,70 +16,72 @@
   </head>
   <body class="body">
     <main class="main">
-      <span class="points">Оценка: <span id="points">0</span></span>
-      <form class="form" id="form">
-        <div class="checkbox-groups">
-          <div class="group">
-            <label class="label">
-              Глубина
-              <input type="checkbox" name="intensity" id="intensity" />
-            </label>
+      <div class="rating-text-block">
+        <span class="rating-text">Результат оценки: <b id="rating" class="rating">0</b></span>
+      </div>
 
-            <label class="label">
-              Графика
-              <input type="checkbox" name="graphics" id="graphics" />
-            </label>
+      <div class="rating-content" id="rating-content">
+        <div class="content-group">
+          <label class="label-block">
+            Глубина
+            <input type="checkbox" class="checkbox" />
+          </label>
 
-            <label class="label">
-              Детали
-              <input type="checkbox" name="minutiae" id="minutiae" />
-            </label>
-          </div>
+          <label class="label-block">
+            Графика
+            <input type="checkbox" class="checkbox" />
+          </label>
 
-          <div class="group">
-            <label class="label">
-              Музыка
-              <input type="checkbox" name="music" id="music" />
-            </label>
-
-            <label class="label">
-              Персонажи
-              <input type="checkbox" name="characters" id="characters" />
-            </label>
-
-            <label class="label">
-              Связность
-              <input type="checkbox" name="coherence" id="coherence" />
-            </label>
-          </div>
-
-          <div class="group">
-            <label class="label">
-              Сюжет
-              <input type="checkbox" name="plot" id="plot" />
-            </label>
-
-            <label class="label">
-              Увлекательность
-              <input type="checkbox" name="fun" id="fun" />
-            </label>
-
-            <label class="label">
-              Уникальность
-              <input type="checkbox" name="originality" id="originality" />
-            </label>
-
-            <label class="label">
-              Эмоциональность
-              <input type="checkbox" name="emotionality" id="emotionality" />
-            </label>
-          </div>
+          <label class="label-block">
+            Детали
+            <input type="checkbox" class="checkbox" />
+          </label>
         </div>
 
-        <button class="button">Рассчитать</button>
-      </form>
-    </main>
+        <div class="content-group">
+          <label class="label-block">
+            Музыка
+            <input type="checkbox" class="checkbox" />
+          </label>
 
+          <label class="label-block">
+            Персонажи
+            <input type="checkbox" class="checkbox" />
+          </label>
+
+          <label class="label-block">
+            Связность
+            <input type="checkbox" class="checkbox" />
+          </label>
+        </div>
+
+        <div class="content-group">
+          <label class="label-block">
+            Сюжет
+            <input type="checkbox" class="checkbox" />
+          </label>
+
+          <label class="label-block">
+            Увлекательность
+            <input type="checkbox" class="checkbox" />
+          </label>
+
+          <label class="label-block">
+            Уникальность
+            <input type="checkbox" class="checkbox" />
+          </label>
+
+          <label class="label-block">
+            Эмоциональность
+            <input type="checkbox" class="checkbox" />
+          </label>
+        </div>
+      </div>
+
+      <div class="rating-button">
+        <input type="button" value="Рассчитать" class="button" id="button" />
+      </div>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>

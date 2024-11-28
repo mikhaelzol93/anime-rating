@@ -1,28 +1,25 @@
-function calcPoints(formNode) {
-  const { elements } = formNode;
+function countCheckedInputs() {
+  const inputsChecked = [];
 
-  const checkedInputs = [];
-
-  Array.from(elements)
-    .filter((item) => !!item.name)
-    .forEach((element) => {
-      if (element.type === 'checkbox') {
-        element.checked === true ? checkedInputs.push(1) : checkedInputs.push(0);
-        element.checked = false;
-      }
+  Array.from(ratingContent.children).forEach((divElement) => {
+    Array.from(divElement.children).forEach((labelElement) => {
+      labelElement.children[0].checked === true ? inputsChecked.push(1) : inputsChecked.push(0);
+      labelElement.children[0].checked = false;
     });
+  });
 
-  return checkedInputs.reduce((x, y) => x + y);
+  return inputsChecked.reduce((x, y) => x + y);
 }
 
-function handleFormSubmit(event) {
+function buttonClickHandler(event) {
   event.preventDefault();
 
-  const points = calcPoints(event.target);
+  const checkedInputsNumber = countCheckedInputs();
 
-  pointsElement.textContent = `${points}`;
+  rating.textContent = `${checkedInputsNumber}`;
 }
 
-const form = document.getElementById('form');
-const pointsElement = document.getElementById('points');
-form.addEventListener('submit', handleFormSubmit);
+const ratingContent = document.getElementById('rating-content');
+const rating = document.getElementById('rating');
+const button = document.getElementById('button');
+button.addEventListener('click', buttonClickHandler);
